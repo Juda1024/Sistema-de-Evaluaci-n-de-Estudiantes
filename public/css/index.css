@@ -1,0 +1,8 @@
+/* Pequeño efecto hover para que las tarjetas se levanten al pasar el mouse */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}

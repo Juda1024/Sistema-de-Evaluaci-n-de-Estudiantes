@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Notas</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/index.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <header class="bg-primary text-white py-4 shadow-sm">
+        <div class="container text-center">
+            <h1 class="fw-bold m-0">Sistema de Gestión Académica</h1>
+            <p class="m-0 opacity-75">Reporte de rendimiento del curso</p>
+        </div>
+    </header>
+
+    <main class="container my-5 flex-grow-1">
+        
+        <div class="row g-4 justify-content-center mb-5">
+            
+            <div class="col-md-4">
+                <div class="card text-center border-success h-100 shadow-sm">
+                    <div class="card-header bg-success text-white fw-bold">Aprobados</div>
+                    <div class="card-body">
+                        <h2 class="display-3 fw-bold text-success" id="total-aprobados">0</h2>
+                        <p class="text-muted small">Notas entre 7 y 10</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-center border-warning h-100 shadow-sm">
+                    <div class="card-header bg-warning text-dark fw-bold">Supletorio</div>
+                    <div class="card-body">
+                        <h2 class="display-3 fw-bold text-warning" id="total-supletorios">0</h2>
+                        <p class="text-muted small">Notas entre 5 y 6</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-center border-danger h-100 shadow-sm">
+                    <div class="card-header bg-danger text-white fw-bold">Reprobados</div>
+                    <div class="card-body">
+                        <h2 class="display-3 fw-bold text-danger" id="total-reprobados">0</h2>
+                        <p class="text-muted small">Notas entre 0 y 4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow border-0">
+                    <div class="card-body p-4 text-center">
+                        <h3 class="text-secondary mb-3">Resultados Generales</h3>
+                        <hr>
+                        <div class="row align-items-center mt-4">
+                            <div class="col-6 border-end">
+                                <h4 class="text-muted">Promedio</h4>
+                                <span class="display-4 fw-bold text-dark" id="promedio-curso">0.00</span>
+                            </div>
+                            <div class="col-6">
+                                <h4 class="text-muted">Estado Actual</h4>
+                                <span class="h2 fw-bold" id="estado-curso">Calculando...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <small>&copy; 2025 - Sistema de Notas JD. Todos los derechos reservados.</small>
+        </div>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="public/js/notas.js"></script>
+</body>
+</html>

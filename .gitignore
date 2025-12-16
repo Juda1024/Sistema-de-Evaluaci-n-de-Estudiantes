@@ -1,0 +1,12 @@
+node_modules/
+dist/
+
+# OneDrive
+**/.OneDrive*
+**/~$*
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
